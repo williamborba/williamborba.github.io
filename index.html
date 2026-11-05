@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>William Borba (@williamborba) · Developer Backend &amp; Mobile</title>
+  <meta name="description" content="Desenvolvedor web backend e mobile. Criador dos aplicativos Pocket Master e FuTe." />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/315857?v=4" />
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .profile-info h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+    }
+
+    .profile-info .username {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-info .bio {
+      margin-bottom: 0.75rem;
+    }
+
+    .location {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .badges img {
+      height: 28px;
+      border-radius: 4px;
+    }
+
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section h3 {
+      font-size: 1rem;
+      color: var(--muted);
+      margin: 1.25rem 0 0.75rem;
+    }
+
+    .section p {
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .app-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      background: var(--bg);
+    }
+
+    .app-card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+
+    .app-card h4 {
+      font-size: 1.1rem;
+    }
+
+    .app-card p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .store-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .store-links img {
+      height: 28px;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img
+        class="avatar"
+        src="https://avatars.githubusercontent.com/u/315857?v=4"
+        alt="William Borba"
+      />
+      <div class="profile-info">
+        <h1>William Borba</h1>
+        <div class="username">@williamborba · Willcode</div>
+        <p class="bio">Desenvolvedor Web Backend &amp; Mobile</p>
+        <div class="location">📍 Porto Alegre, RS</div>
+        <div class="badges">
+          <a href="https://github.com/williamborba" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/william-borba-39716927/" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/-William%20Borba-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+          </a>
+          <a href="mailto:wborba.dev@gmail.com">
+            <img src="https://img.shields.io/badge/-wborba.dev-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+          </a>
+          <a href="https://play.google.com/store/apps/developer?id=Willcode" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/Google%20Play-black?style=for-the-badge&logo=google-play" alt="Google Play" />
+          </a>
+          <a href="https://apps.apple.com/br/developer/william-borba/id1726671067" target="_blank" rel="noopener">
+            <img src="https://img.shields.io/badge/Apple%20Store-black?style=for-the-badge&logo=app-store" alt="App Store" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Sobre</h2>
+      <p>
+        Sou desenvolvedor web backend e mobile, aqui estarão alguns de meus trabalhos e projetos.
+        Sinta-se à vontade para perguntar, tirar dúvidas ou enviar sugestões.
+      </p>
+      <p>
+        Tenho algum tempo livre para projetos interessantes ou comerciais — sinta-se à vontade para me convidar e conversar sobre seus projetos.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Projetos e Aplicativos</h2>
+      <div class="apps-grid">
+        <div class="app-card">
+          <div>
+            <div class="app-card-header">
+              <img
+                class="app-icon"
+                src="https://play-lh.googleusercontent.com/XRXbgK4CeUk5Wll2rscjbs50FpPPy4YeaLP38Hu6VCe3dRRKntqXefojOR442Uaxov_x49usc7H3Y5GMONLZkg=w240-h480-rw"
+                alt="Pocket Master"
+              />
+              <h4>Pocket Master</h4>
+            </div>
+            <p>
+              Companheiro definitivo para aventuras de RPG de mesa, agora diretamente no seu bolso! Utilizando Inteligência Artificial avançada, o app atua como um Mestre de Jogo (DM) dinâmico, criando narrativas épicas e personalizadas baseadas em cada uma de suas escolhas.
+            </p>
+          </div>
+          <div class="store-links">
+            <a href="https://play.google.com/store/apps/details?id=com.willcode.app_master_rpg" target="_blank" rel="noopener">
+              <img src="https://img.shields.io/badge/Google%20Play-black?style=for-the-badge&logo=google-play" alt="Google Play" />
+            </a>
+          </div>
+        </div>
+
+        <div class="app-card">
+          <div>
+            <div class="app-card-header">
+              <img
+                class="app-icon"
+                src="https://play-lh.googleusercontent.com/HK1XFhHd9N3W1W7bU86KHILgohD1DYQ-tl36tRKS9ddmCGWRs6QahessPIfWdbWL2g=w240-h480-rw"
+                alt="FuTe"
+              />
+              <h4>FuTe</h4>
+            </div>
+            <p>
+              Aplicativo para organização de jogos de futebol com os amigos, utilizando recursos avançados do Firebase como banco de dados em tempo real.
+            </p>
+          </div>
+          <div class="store-links">
+            <a href="https://play.google.com/store/apps/details?id=com.willcode.football_community_app" target="_blank" rel="noopener">
+              <img src="https://img.shields.io/badge/Google%20Play-black?style=for-the-badge&logo=google-play" alt="Google Play" />
+            </a>
+            <a href="https://apps.apple.com/br/app/fute/id6476427407?platform=iphone" target="_blank" rel="noopener">
+              <img src="https://img.shields.io/badge/Apple%20Store-black?style=for-the-badge&logo=app-store" alt="App Store" />
+            </a>
+          </div>
+        </div>
+
+        <div class="app-card">
+          <div>
+            <div class="app-card-header">
+              <h4>Pets Carentes App</h4>
+            </div>
+            <p>
+              Aplicativo para adoção de animais com câmera, geolocalização, notificações push, Firebase e serviços em segundo plano (atualmente fora do ar).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Tecnologias</h2>
+
+      <h3>Linguagens e Frameworks</h3>
+      <div class="badges">
+        <a href="https://www.python.org/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /></a>
+        <a href="https://www.djangoproject.com/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" /></a>
+        <a href="https://www.php.net/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" /></a>
+        <a href="https://www.java.com/pt-BR/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java" /></a>
+        <a href="https://www.rust-lang.org/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" /></a>
+        <a href="https://dart.dev/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" /></a>
+        <a href="https://flutter.dev/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" /></a>
+        <a href="https://kotlinlang.org/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/kotlin-white?style=for-the-badge&logo=kotlin" alt="Kotlin" /></a>
+        <a href="https://pt.wikipedia.org/wiki/Markdown" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown" /></a>
+        <a href="https://pt.wikipedia.org/wiki/Shell_script" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/-SHELL%20SCRIPT-black?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell Script" /></a>
+        <a href="https://www.selenium.dev/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/-SELENIUM-green?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium" /></a>
+      </div>
+
+      <h3>Base de Dados e Infra</h3>
+      <div class="badges">
+        <a href="https://www.postgresql.org/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" /></a>
+        <a href="https://www.mongodb.com/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" /></a>
+        <a href="https://www.sqlite.org/index.html" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" /></a>
+        <a href="https://redis.io/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/-REDIS-white?style=for-the-badge&logo=redis" alt="Redis" /></a>
+        <a href="https://aws.amazon.com/pt/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" /></a>
+        <a href="https://www.docker.com/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/-Docker-black?style=for-the-badge&logo=docker" alt="Docker" /></a>
+      </div>
+    </section>
+
+    <footer>
+      © William Borba · <a href="mailto:wborba.dev@gmail.com">wborba.dev@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
